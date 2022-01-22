@@ -46,6 +46,9 @@
           </v-avatar>
           <p class="white--text subtitle-1 mt-1">The Net Ninja</p>
         </v-col>
+        <v-col class="mt-4 mb-3">
+          <Popup />
+        </v-col>
       </v-row>
       <v-list>
         <v-list-item
@@ -69,7 +72,9 @@
 </template>
 
 <script>
+import Popup from "./Popup.vue";
 export default {
+  components: { Popup },
   data() {
     return {
       drawer: false,
